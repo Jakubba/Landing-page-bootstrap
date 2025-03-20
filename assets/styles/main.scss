@@ -1,0 +1,51 @@
+body {
+  background-color: $background-body;
+}
+
+.gap-70 {
+  gap: 70px;
+}
+
+.video {
+  min-height: 348.56px;
+}
+
+.rounded-16 {
+  border-radius: 16px;
+}
+
+.min-h-600 {
+  min-height: 600px;
+}
+
+input[type='text'],
+input[type='email'] {
+  border: 2px solid $grey-mid;
+  border-radius: 0;
+  padding: 20px 27px;
+}
+input[type='checkbox'] {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  border-radius: 0;
+  border: 1px solid $grey-light;
+  background: transparent;
+}
+
+@media (min-width: 768px) {
+  form {
+    input {
+      max-width: 355px;
+    }
+  }
+}
+
+.w-max {
+  width: max-content;
+}
+
+time::before {
+  content: ' | ';
+  margin: 0 8px;
+}

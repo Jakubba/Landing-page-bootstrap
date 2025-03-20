@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Jakub Barszcz" />
+    <meta name="description" content="Zadanie rekrutacyjne" />
+    <meta name="keywords" content="HTML, SCSS, Boostrap" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie rekrutacyjne - landing page</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100..700&display=swap"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      as="style"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg bd-navbar sticky-top bg-white p-0">
+      <nav class="container" aria-label="Menu">
+        <a class="navbar-brand m-0 px-3 py-2" href="#">
+          <img
+            src="./assets/media/logo-brand.png"
+            alt="Logo"
+            width="87"
+            height="32"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Przełącz nawigację"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-0">
+            <li class="nav-item fs-5 fw-normal lh-base text-dark px-3 py-2 dropdown">
+              <a
+                class="nav-link fs-6 fw-semibold lh-sm dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pozycja 1
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Pozycja 1a</a></li>
+                <li><a class="dropdown-item" href="#">Pozycja 1b</a></li>
+                <li><a class="dropdown-item" href="#">Pozycja 1c</a></li>
+              </ul>
+            </li>
+            <li class="nav-item fs-5 fw-normal lh-base text-dark px-3 py-2">
+              <a class="nav-link fs-6 fw-semibold lh-sm" aria-current="page" href="#"
+                >Pozycja 2</a
+              >
+            </li>
+            <li class="nav-item fs-5 fw-normal lh-base text-dark px-3 py-2 dropdown">
+              <a
+                class="nav-link fs-6 fw-semibold lh-sm dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pozycja 3
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Pozycja 3a</a></li>
+                <li><a class="dropdown-item" href="#">Pozycja 3b</a></li>
+                <li><a class="dropdown-item" href="#">Pozycja 3c</a></li>
+              </ul>
+            </li>
+            <li class="nav-item fs-5 fw-normal lh-base text-dark px-3 py-2">
+              <a class="nav-link fs-6 fw-semibold lh-sm" aria-current="page" href="#"
+                >Pozycja 4</a
+              >
+            </li>
+          </ul>
+          <ul class="d-flex ms-auto mb-0 gap-3 p-4">
+            <a class="btn btn-primary text-white py-2 px-3 rounded-2" href="#"
+              >Załóż konto</a
+            >
+            <a class="btn btn-outline-secondary py-2 px-3 rounded-2" href="#"
+              >Zaloguj się</a
+            >
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="w-100 bg-gray py-5" aria-labelledby="hero-heading">
+      <div class="container pt-md-4 pb-md-3 mx-auto">
+        <div class="row pb-md-5">
+          <div class="col-12 col-lg-6 pt-2">
+            <h1 id="hero-heading" class="fs-1 fw-bold lh-sm mt-5 mb-3">
+              Bezpieczne, skalowalne oprogramowanie
+            </h1>
+            <h2 class="mb-5">dla instytucji finansowych</h2>
+            <p class="fs-5 fw-normal lh-sm pb-3 mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit.
+            </p>
+            <div class="d-flex flex-wrap gap-2 mb-5 border-bottom border-2 pb-5">
+              <a class="btn btn-primary rounded-2 text-white mt-2 py-3 px-4" href="#"
+                >Załóż darmowe konto</a
+              >
+              <a
+                class="btn btn-outline-secondary rounded-2 d-flex align-items-center mt-2 py-3 px-4"
+                href="#"
+              >
+                <img
+                  class="d-block me-2"
+                  src="./assets/media/icon-play.png"
+                  alt=""
+                  height="20"
+                  width="20"
+                />Zobacz jak to działa</a
+              >
+            </div>
+            <p class="my-5">Lorem <b>ipsum dolor</b> sit amet</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#"
+                ><img
+                  src="./assets/media/button_App_Store.png"
+                  alt="Pobierz aplikację z App Store"
+                  height="60"
+                  width="180"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./assets/media/button_Google_Play.png"
+                  alt="Pobierz aplikację z Google Play"
+                  height="60"
+                  width="180"
+              /></a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div
+              id="carouselExampleDark"
+              class="carousel d-flex flex-column justify-content-center carousel-dark slide h-100"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img
+                    src="./assets/media/img-cover.png"
+                    class="d-block h-100 w-100 rounded-2 overflow-hidden"
+                    alt="Slajd 1"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="fs-4 fw-bold lh-sm p-24-40">Automatyzacja procesów</h3>
+                    <p class="pe-40 p-small">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="./assets/media/img-cover.png"
+                    class="d-block h-100 w-100 rounded-2 overflow-hidden"
+                    alt="Slajd 2"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="fs-4 fw-bold lh-sm p-24-40">Optymalizacja wydajności</h3>
+                    <p class="fs-5 fw-normal lh-sm pe-40">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="./assets/media/img-cover.png"
+                    class="d-block h-100 w-100 rounded-2 overflow-hidden"
+                    alt="Slajd 3"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="fs-4 fw-bold lh-sm p-24-40">
+                      Zaawansowane bezpieczeństwo
+                    </h3>
+                    <p class="fs-5 fw-normal lh-sm pe-40">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="./assets/media/img-cover.png"
+                    class="d-block h-100 w-100 rounded-2 overflow-hidden"
+                    alt="Slajd 4"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="fs-4 fw-bold lh-sm p-24-40">Integracja z systemami</h3>
+                    <p class="fs-5 fw-normal lh-sm pe-40">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="./assets/media/img-cover.png"
+                    class="d-block h-100 w-100 rounded-2 overflow-hidden"
+                    alt="Slajd 5"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="fs-4 fw-bold lh-sm p-24-40">
+                      Elastyczność i skalowalność
+                    </h3>
+                    <p class="fs-5 fw-normal lh-sm pe-40">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              <div
+                class="carousel-indicators justify-content-start position-relative bottom-0 end-0"
+              >
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 5"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-100 bg-white py-5" aria-labelledby="support-heading">
+      <div class="container mx-auto">
+        <div class="row">
+          <div class="col-12">
+            <h2 id="support-heading" class="fs-2 fw-bold lh-sm mb-4 mt-5">
+              Zawsze gotowi, by pomóc. 24/7 wsparcie techniczne
+            </h2>
+            <p class="fs-5 fw-normal lh-base pb-4 mt-3 mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+              ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+              facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="row list-unstyled">
+              <li class="col-12 col-md-6 py-3">
+                <div
+                  class="d-flex justify-content-start align-items-start border-bottom border-1 pb-3"
+                >
+                  <img
+                    src="./assets/media/ico_check.png"
+                    alt="Ikona zatwierdzenia"
+                    height="32"
+                    width="32"
+                    class="me-3 object-fit-contain"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="fs-4 fw-bold lh-sm pb-2">Zaawansowana analityka</h3>
+                    <p class="fs-5 fw-normal lh-base">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="col-12 col-md-6 py-3">
+                <div
+                  class="d-flex justify-content-start align-items-start border-bottom border-1 pb-3"
+                >
+                  <img
+                    src="./assets/media/ico_check.png"
+                    alt="Ikona zatwierdzenia"
+                    height="32"
+                    width="32"
+                    class="me-3 object-fit-contain"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="fs-4 fw-bold lh-sm pb-2">Bezpieczeństwo klasy bankowej</h3>
+                    <p class="fs-5 fw-normal lh-base">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="col-12 col-md-6 py-3">
+                <div
+                  class="d-flex justify-content-start align-items-start border-bottom border-1 pb-3"
+                >
+                  <img
+                    src="./assets/media/ico_check.png"
+                    alt="Ikona zatwierdzenia"
+                    height="32"
+                    width="32"
+                    class="me-3 object-fit-contain"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="fs-4 fw-bold lh-sm pb-2">
+                      Skalowalność na poziomie globalnym
+                    </h3>
+                    <p class="fs-5 fw-normal lh-base">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="col-12 col-md-6 py-3">
+                <div
+                  class="d-flex justify-content-start align-items-start border-bottom border-1 pb-3"
+                >
+                  <img
+                    src="./assets/media/ico_check.png"
+                    alt="Ikona zatwierdzenia"
+                    height="32"
+                    width="32"
+                    class="me-3 object-fit-contain"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="fs-4 fw-bold lh-sm pb-2">Obsługa transakcji</h3>
+                    <p class="fs-5 fw-normal lh-base">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="col-12 col-md-6 py-3">
+                <div class="d-flex justify-content-start align-items-start">
+                  <img
+                    src="./assets/media/ico_check.png"
+                    alt="Ikona zatwierdzenia"
+                    height="32"
+                    width="32"
+                    class="me-3 object-fit-contain"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="fs-4 fw-bold lh-sm pb-2">
+                      Elastyczne API dla programistów
+                    </h3>
+                    <p class="fs-5 fw-normal lh-base">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="col-12 col-md-6 py-3">
+                <div class="d-flex justify-content-start align-items-start">
+                  <img
+                    src="./assets/media/ico_check.png"
+                    alt="Ikona zatwierdzenia"
+                    height="32"
+                    width="32"
+                    class="me-3 object-fit-contain"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="fs-4 fw-bold lh-sm pb-2">Monitorowanie i analiza</h3>
+                    <p class="fs-5 fw-normal lh-base">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-100 bg-white pt-0 py-5" aria-labelledby="partners-security-heading">
+      <div class="container mx-auto">
+        <div
+          class="row d-flex flex-column flex-md-row justify-content-between align-items-center border-bottom border-top border-1 py-5"
+        >
+          <div class="col-12 col-lg-4 mb-4 mb-md-0">
+            <h2 id="partners-security-heading" class="fs-4 fw-bold lh-sm py-3 pr-5">
+              Bezpieczne i skalowalne oprogramowanie dla instytucji finansowych
+            </h2>
+          </div>
+          <div class="col-12 col-md-8 d-flex justify-content-start align-items-center">
+            <ul
+              class="d-flex flex-wrap flex-md-nowrap justify-content-between align-items-center w-100 gap-4 list-unstyled"
+            >
+              <li class="rounded-2 bg-light-grey overflow-hidden w-100 h-100">
+                <img
+                  class="d-block w-100 h-100 object-fit-contain"
+                  src="./assets/media/list-logo.png"
+                  alt="Logo partnera 1"
+                />
+              </li>
+              <li class="rounded-2 bg-light-grey overflow-hidden w-100 h-100">
+                <img
+                  class="d-block w-100 h-100 object-fit-contain"
+                  src="./assets/media/list-logo.png"
+                  alt="Logo partnera 2"
+                />
+              </li>
+              <li class="rounded-2 bg-light-grey overflow-hidden w-100 h-100">
+                <img
+                  class="d-block w-100 h-100 object-fit-contain"
+                  src="./assets/media/list-logo.png"
+                  alt="Logo partnera 3"
+                />
+              </li>
+              <li class="rounded-2 bg-light-grey overflow-hidden w-100 h-100">
+                <img
+                  class="d-block w-100 h-100 object-fit-contain"
+                  src="./assets/media/list-logo.png"
+                  alt="Logo partnera 4"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-100 bg-white pb-5" aria-labelledby="poznaj-system-heading">
+      <div class="container mx-auto pb-md-4">
+        <div class="row d-flex flex-column-reverse flex-md-row">
+          <div class="col-12 col-md-6 p-0">
+            <div
+              class="video position-relative h-100 w-100 bg-gray rounded-2 overflow-hidden"
+            >
+              <video src="" aria-label="Podgląd systemu"></video>
+              <button
+                class="btn icon-xl bg-dark-grey position-absolute top-50 start-50 translate-middle rounded-circle d-flex justify-content-center align-items-center"
+                type="button"
+                aria-label="Odtwórz wideo"
+              >
+                <img src="./assets/media/play.png" alt="Ikona odtwarzania" />
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 pt-4 mb-5 mb-md-0 ps-md-5">
+            <h2 id="poznaj-system-heading" class="fs-2 fw-bold lh-sm mb-4">
+              Poznaj system
+            </h2>
+            <p class="fs-5 fw-normal lh-base mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+              ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+              facilisis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-100 bg-gray p-0" aria-labelledby="liderzy-finansowi-heading">
+      <div class="container mx-auto p-0">
+        <div class="row min-h-600">
+          <div
+            class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start p-4"
+          >
+            <h2 id="liderzy-finansowi-heading" class="fs-2 fw-bold lh-sm">
+              Zaufali nam liderzy branży finansowej
+            </h2>
+            <p class="fs-3 fw-normal lh-sm mb-4">Wypróbuj naszą platformę za darmo!</p>
+            <p class="fs-5 fw-normal lh-base mt-3 mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit.
+            </p>
+            <button class="btn btn-dark fs-5 fw-normal lh-base-bold px-5 py-4 rounded-16">
+              <img
+                class="icon-md me-2 object-fit-contain"
+                src="./assets/media/ic.svg"
+                alt="Ikona kalendarza"
+              />
+              Zarezerwuj wprowadzenie demo
+            </button>
+          </div>
+          <div class="col-12 col-lg-6 p-0">
+            <div
+              class="h-100 w-100 bg-gray rounded-2 overflow-hidden d-flex justify-content-center align-items-center"
+            >
+              <img
+                class="h-100 w-100 object-fit-cover"
+                src="./assets/media/img-cover.png"
+                alt="Podgląd systemu na ekranie"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-100 bg-white pb-5" aria-labelledby="blog-heading">
+      <div class="container mx-auto py-5">
+        <div class="row mx-0 py-md-4">
+          <div class="col-12 p-0">
+            <h2 id="blog-heading" class="fs-2 fw-bold lh-sm mb-4">Blog</h2>
+
+            <ul class="p-0 m-0 mt-3 list-unstyled">
+              <li class="d-flex flex-column py-2">
+                <article
+                  class="d-flex flex-column flex-md-row gap-70 py-4 border-bottom border-1"
+                >
+                  <figure
+                    class="bg-dark-grey rounded-2 overflow-hidden d-flex justify-content-center align-items-center bg-gray icon-lg"
+                  >
+                    <img
+                      class="w-100 h-100 object-fit-contain"
+                      src="./assets/media/bg-gray.png"
+                      alt="Miniatura wpisu blogowego o nowoczesnym oprogramowaniu w sektorze finansowym"
+                    />
+                  </figure>
+
+                  <div class="d-flex flex-column">
+                    <h3 class="fs-4 fw-bold lh-sm mb-4">
+                      Przyszłość: Jak Nowoczesne Oprogramowanie Zmienia Sektor Finansowy
+                    </h3>
+                    <div class="d-flex align-items-center gap-4">
+                      <img
+                        class="rounded-circle object-fit-cover icon-sm"
+                        src="./assets/media/bg-gray.png"
+                        alt="Zdjęcie autora: Led Zeppelin"
+                      />
+
+                      <p class="p-small">
+                        <span>Led Zeppelin</span><time>13 lipca 2021</time>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <li class="d-flex flex-column py-2">
+                <article
+                  class="d-flex flex-column flex-md-row gap-70 py-4 border-bottom border-1"
+                >
+                  <figure
+                    class="bg-dark-grey rounded-2 overflow-hidden d-flex justify-content-center align-items-center bg-gray icon-lg"
+                  >
+                    <img
+                      class="w-100 h-100 object-fit-contain"
+                      src="./assets/media/bg-gray.png"
+                      alt="Miniatura wpisu blogowego o bezpieczeństwie w bankowości cyfrowej"
+                    />
+                  </figure>
+                  <div class="d-flex flex-column">
+                    <h3 class="fs-4 fw-bold lh-sm mb-4">
+                      Bezpieczeństwo w Bankowości Cyfrowej - Jak Chronimy Twoje Dane?
+                    </h3>
+                    <div class="d-flex align-items-center gap-4">
+                      <img
+                        class="rounded-circle object-fit-cover icon-sm"
+                        src="./assets/media/bg-gray.png"
+                        alt="Zdjęcie autora: Bruce Dickinson"
+                      />
+                      <p class="p-small">
+                        <span>Bruce Dickinson</span><time>6 czerwca 2024</time>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <li class="d-flex flex-column py-2">
+                <article
+                  class="d-flex flex-column flex-md-row gap-70 py-4 border-bottom border-1"
+                >
+                  <figure
+                    class="bg-dark-grey rounded-2 overflow-hidden d-flex justify-content-center align-items-center bg-gray icon-lg"
+                  >
+                    <img
+                      class="w-100 h-100 object-fit-contain"
+                      src="./assets/media/bg-gray.png"
+                      alt="Miniatura wpisu blogowego o roli API w finansach"
+                    />
+                  </figure>
+                  <div class="d-flex flex-column">
+                    <h3 class="fs-4 fw-bold lh-sm mb-4">
+                      API w finansach - klucz do innowacji
+                    </h3>
+                    <div class="d-flex align-items-center gap-4">
+                      <img
+                        class="rounded-circle object-fit-cover icon-sm"
+                        src="./assets/media/bg-gray.png"
+                        alt="Zdjęcie autora: Steve Harris"
+                      />
+                      <p class="p-small">
+                        <span>Steve Harris</span><time>31 marca 2024</time>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <li class="d-flex flex-column py-2">
+                <article class="d-flex flex-column flex-md-row gap-70 py-4">
+                  <figure
+                    class="bg-dark-grey rounded-2 overflow-hidden d-flex justify-content-center align-items-center bg-gray icon-lg"
+                  >
+                    <img
+                      class="w-100 h-100 object-fit-contain"
+                      src="./assets/media/bg-gray.png"
+                      alt="Miniatura wpisu blogowego o automatyzacji bankowości"
+                    />
+                  </figure>
+                  <div class="d-flex flex-column">
+                    <h3 class="fs-4 fw-bold lh-sm mb-4">
+                      Automatyzacja bankowości w praktyce
+                    </h3>
+                    <div class="d-flex align-items-center gap-4">
+                      <img
+                        class="rounded-circle object-fit-cover icon-sm"
+                        src="./assets/media/bg-gray.png"
+                        alt="Zdjęcie autora: Steve Harris"
+                      />
+                      <p class="p-small">
+                        <span>Steve Harris</span><time>27 marca 2024</time>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+
+            <a
+              href="#"
+              class="btn btn-outline-secondary fs-5 fw-bold lh-base mt-3 py-4 px-5 rounded-16"
+            >
+              Zobacz więcej wpisów
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-100 bg-black py-5" aria-labelledby="compliance-heading">
+      <div class="container pt-md-5">
+        <div
+          class="row mx-0 d-flex flex-column flex-md-row align-items-center py-5 border-1 border-bottom border-white"
+        >
+          <div class="col-12 col-md-8 p-0 pe-md-5">
+            <span
+              class="d-inline-block w-max bg-primary fs-6 fw-semibold lh-sm text-light p-10-63 mb-3 text-uppercase"
+            >
+              Label
+            </span>
+            <h2 id="compliance-heading" class="fs-1 fw-bold lh-sm text-light mt-1 mb-3">
+              100% zgodności z regulacjami
+            </h2>
+
+            <p class="fs-5 fw-normal lh-base text-light mt-4 mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit.
+            </p>
+            <p class="fs-5 fw-normal lh-base text-light mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <form class="row">
+              <div class="col-12 col-md-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputText1"
+                  placeholder="Text"
+                />
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputText2"
+                  placeholder="Text"
+                />
+              </div>
+              <div class="col-12 mt-1 mb-4 d-flex align-items-center">
+                <input type="checkbox" id="acceptRules" class="me-2" />
+                <label for="acceptRules" class="text-light">
+                  Akceptuję <a href="#" class="text-decoration-underline">regulamin</a>*
+                </label>
+              </div>
+              <div class="col-auto mt-1 mb-3">
+                <button
+                  type="submit"
+                  class="btn btn-light text-dark fs-5 fw-semibold lh-sm p-25-42 rounded-16 me-3"
+                >
+                  <img
+                    class="me-2"
+                    src="./assets/media/icon-download.png"
+                    alt="Ikona pobierania"
+                  />
+                  Pobierz za darmo
+                </button>
+              </div>
+              <div class="col-auto d-flex align-items-center justify-content-center mb-3">
+                <a
+                  href="#"
+                  class="link-light text-light fs-5 fw-semibold lh-sm text-decoration-underline"
+                >
+                  Pobierz spis treści
+                </a>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-md-4 p-0">
+            <div
+              class="d-flex flex-column align-items-center rounded-3 bg-white overflow-hidden w-100 h-100"
+            >
+              <img
+                class="w-100 h-100 object-fit-cover"
+                src="./assets/media/img-white-cover.png"
+                alt="Okładka dokumentu o zgodności z regulacjami"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-100 bg-black px-0 pt-5 pb-120" aria-labelledby="youtube-section">
+      <div class="container pt-2 mx-auto">
+        <h2 id="youtube-section" class="fs-2 fw-bold lh-sm text-light mt-1 mb-5">
+          Sprawdź publikacje na naszym kanale YouTube
+        </h2>
+        <div class="swiper mySwiper container mt-2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="d-flex flex-column">
+                <figure
+                  class="swiper-slide__img position-relative h-100 w-100 rounded-16 overflow-hidden mb-3"
+                >
+                  <img
+                    class="w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle"
+                    src="./assets/media/img-white-cover.png"
+                    alt="Miniatura zdjęcia 1"
+                  />
+                  <figcaption class="visually-hidden">
+                    Miniatura pierwszego filmu
+                  </figcaption>
+                </figure>
+                <p class="fs-5 fw-normal lh-base text-light mt-1">
+                  Lorem ipsum dolor sit amet - consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex flex-column">
+                <figure
+                  class="swiper-slide__img position-relative h-100 w-100 rounded-16 overflow-hidden mb-3"
+                >
+                  <img
+                    class="w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle"
+                    src="./assets/media/img-white-cover.png"
+                    alt="Miniatura zdjęcia 2"
+                  />
+                  <figcaption class="visually-hidden">
+                    Miniatura drugiego filmu
+                  </figcaption>
+                </figure>
+                <p class="fs-5 fw-normal lh-base text-light mt-1">
+                  Lorem ipsum dolor sit amet - consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex flex-column">
+                <figure
+                  class="swiper-slide__img position-relative h-100 w-100 rounded-16 overflow-hidden mb-3"
+                >
+                  <img
+                    class="w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle"
+                    src="./assets/media/img-white-cover.png"
+                    alt="Miniatura zdjęcia 3"
+                  />
+                  <figcaption class="visually-hidden">
+                    Miniatura trzeciego filmu
+                  </figcaption>
+                </figure>
+                <p class="fs-5 fw-normal lh-base text-light mt-1">
+                  Lorem ipsum dolor sit amet - consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex flex-column">
+                <figure
+                  class="swiper-slide__img position-relative h-100 w-100 rounded-16 overflow-hidden mb-3"
+                >
+                  <img
+                    class="w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle"
+                    src="./assets/media/img-white-cover.png"
+                    alt="Miniatura zdjęcia 4"
+                  />
+                  <figcaption class="visually-hidden">
+                    Miniatura czwartego filmu
+                  </figcaption>
+                </figure>
+                <p class="fs-5 fw-normal lh-base text-light mt-1">
+                  Lorem ipsum dolor sit amet - consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-buttons">
+            <button
+              class="swiper-button-prev bg-transparent"
+              aria-label="Poprzedni slajd"
+            ></button>
+            <button
+              class="swiper-button-next bg-transparent"
+              aria-label="Następny slajd"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "prettier": "3.5.3"
+  },
+  "scripts": {
+    "format": "prettier --write '**/*.{js,scss,html,css}'",
+    "sass": "sass --watch src/scss:dist/css",
+    "dev": "concurrently \"npm run format --watch\" \"npm run sass\""
+  }
+}
